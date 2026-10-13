@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Assistant d'installation macOS de SmartDigiCat (productbuild).
+  Etapes : Introduction > Lisez-moi > Type d'installation > Installation > Resume.
+  __VERSION__ et __ARCH__ sont remplaces par build_pkg.sh.
+-->
+<installer-gui-script minSpecVersion="2">
+    <title>SmartDigiCat __VERSION__</title>
+    <background file="background.png" alignment="bottomleft" scaling="none"/>
+    <background-darkAqua file="background.png" alignment="bottomleft" scaling="none"/>
+    <welcome file="welcome.html" mime-type="text/html"/>
+    <readme file="readme.html" mime-type="text/html"/>
+    <!-- Licence : quand le fichier existera, ajouter une page d'acceptation avec
+         <license file="license.txt"/> (fichier a placer dans resources/fr.lproj et en.lproj) -->
+    <conclusion file="conclusion.html" mime-type="text/html"/>
+    <options customize="never" require-scripts="false" hostArchitectures="__ARCH__"/>
+    <domains enable_anywhere="false" enable_currentUserHome="false" enable_localSystem="true"/>
+    <volume-check>
+        <allowed-os-versions>
+            <os-version min="11.0"/>
+        </allowed-os-versions>
+    </volume-check>
+    <choices-outline>
+        <line choice="default">
+            <line choice="fr.centralelille.smartdigicat"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="fr.centralelille.smartdigicat" visible="false">
+        <pkg-ref id="fr.centralelille.smartdigicat"/>
+    </choice>
+    <pkg-ref id="fr.centralelille.smartdigicat" version="__VERSION__" onConclusion="none">SmartDigiCat-component.pkg</pkg-ref>
+</installer-gui-script>

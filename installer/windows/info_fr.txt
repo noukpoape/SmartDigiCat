@@ -1,0 +1,19 @@
+﻿SmartDigiCat — logiciel de criblage catalytique
+Chaire industrielle, Centrale Lille
+
+SmartDigiCat réunit, dans une seule interface :
+  • l'import et le nettoyage de données (CSV, texte, Excel) ;
+  • les statistiques descriptives et les graphiques ;
+  • les modèles de régression et la prédiction ;
+  • l'optimisation bayésienne des conditions expérimentales.
+
+À propos de cette installation
+  • Aucune connexion internet n'est nécessaire : tout est inclus dans l'installeur.
+  • Les fichiers du logiciel sont placés dans un dossier masqué ; SmartDigiCat se
+    lance depuis le menu Démarrer ou l'icône du Bureau.
+  • Pour désinstaller : Paramètres > Applications > SmartDigiCat, ou menu
+    Démarrer > SmartDigiCat > Désinstaller SmartDigiCat.
+  • La désinstallation ne supprime jamais vos projets ni vos données.
+
+Manuel d'utilisation : bouton « Help » du logiciel.
+Site du projet : https://github.com/noukpoape/SmartDigiCat

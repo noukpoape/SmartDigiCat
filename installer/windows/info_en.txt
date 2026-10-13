@@ -1,0 +1,19 @@
+﻿SmartDigiCat — catalytic screening software
+Industrial chair, Centrale Lille
+
+SmartDigiCat brings together, in a single interface:
+  • data import and cleaning (CSV, text, Excel);
+  • descriptive statistics and charts;
+  • regression models and prediction;
+  • Bayesian optimization of experimental conditions.
+
+About this installation
+  • No internet connection is needed: everything is included in the installer.
+  • The program files are placed in a hidden folder; start SmartDigiCat from
+    the Start menu or the desktop icon.
+  • To uninstall: Settings > Apps > SmartDigiCat, or Start menu >
+    SmartDigiCat > Uninstall SmartDigiCat.
+  • Uninstalling never deletes your projects or data.
+
+User manual: "Help" button in the software.
+Project page: https://github.com/noukpoape/SmartDigiCat

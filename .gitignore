@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# PyInstaller
+*.spec.bak
+
+# Editeurs / systeme
+.DS_Store
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+
+# Projets SmartDigiCat crees pendant les essais (fichier .json + dossier associe)
+*_fichiers/
+capture_smartdigicat.png
+
+# Donnees : ne pas publier de donnees confidentielles par erreur
+data/private/

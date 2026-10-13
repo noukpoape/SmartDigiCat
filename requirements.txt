@@ -1,0 +1,18 @@
+# Dependances completes (interface graphique + calcul)
+numpy
+pandas>=2.0
+scipy>=1.9
+mpmath
+scikit-learn
+mlxtend
+matplotlib
+seaborn
+plotnine
+openpyxl
+python-docx
+fpdf2
+Pillow
+joblib
+pandastable
+tableone
+tkmacosx

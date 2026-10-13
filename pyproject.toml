@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartdigicat"
+version = "1.0.0"
+description = "Catalytic screening software: data analysis, regression models and Bayesian optimization (Tkinter GUI)"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Sebastien Paul" },
+    { name = "Sophie Dabo-Niang" },
+    { name = "Komlan Noukpoape" },
+    { name = "Wahba Saweiras" },
+    { name = "Svetlana Heyte" },
+]
+dependencies = [
+    "numpy",
+    "pandas>=2.0",
+    "scipy>=1.9",
+    "mpmath",
+]
+
+[project.optional-dependencies]
+gui = [
+    "scikit-learn",
+    "mlxtend",
+    "matplotlib",
+    "seaborn",
+    "plotnine",
+    "openpyxl",
+    "python-docx",
+    "fpdf2",
+    "Pillow",
+    "joblib",
+    "pandastable",
+    "tableone",
+    "tkmacosx",
+]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/noukpoape/SmartDigiCat"
+
+[project.scripts]
+smartdigicat = "smartdigicat.app:main"
+
+[tool.setuptools.packages.find]
+include = ["smartdigicat*"]
+
+[tool.setuptools.package-data]
+smartdigicat = ["figures/*.png", "figures/manuel/*.pdf", "figures/manuel/*/*.png"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

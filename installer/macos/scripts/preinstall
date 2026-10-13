@@ -1,0 +1,7 @@
+#!/bin/bash
+# Avant l'installation : ferme SmartDigiCat et retire l'ancienne version, pour qu'une
+# mise a jour ne laisse aucun fichier perime dans l'application.
+# $2 = dossier d'installation (/Applications)
+pkill -x SmartDigiCat 2>/dev/null || true
+rm -rf "$2/SmartDigiCat/SmartDigiCat.app" "$2/SmartDigiCat/Désinstaller SmartDigiCat.app"
+exit 0

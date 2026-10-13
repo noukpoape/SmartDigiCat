@@ -1,0 +1,6 @@
+# Dependances du seul module de calcul (smartdigicat/core) et des tests
+numpy
+pandas>=2.0
+scipy>=1.9
+mpmath
+pytest
